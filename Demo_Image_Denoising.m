@@ -32,7 +32,7 @@ SSIMs = zeros(1,length(filePaths));
     
 for Sigma = 25  %% % [ 15 25 50
     %% load model
-    load('C:\Users\97913\Desktop\上传Github的代码\models\Resnet_Image200_15-epoch');
+    load('..\models\Resnet_Image200_15-epoch');
     net = dagnn.DagNN.loadobj(net) ;   
     net.removeLayer('objective') ;
     out_idx = net.getVarIndex('prediction') ;
